@@ -30,9 +30,10 @@ function urlExtractor(e) {
         function closeModal(e) {
             if (e.key === "Escape") {
                 instance.close()
+                gallery.removeEventListener("keydown", closeModal);
             }
         }
     }   
-
+    
 }
 
